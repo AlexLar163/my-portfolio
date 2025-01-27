@@ -1,0 +1,11 @@
+---
+export interface TypingProps {
+  text: string;
+  class?: string;
+}
+const { text, class: className } = Astro.props;
+---
+
+<p class={`overflow-hidden whitespace-nowrap border-r-4 pr-2 animate-typing max-w-fit ${className}`}>
+  {text}
+</p>

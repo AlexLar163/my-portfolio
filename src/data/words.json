@@ -1,0 +1,108 @@
+{
+  "frontend": [
+    {
+      "word": "React.js",
+      "color": "#00D8FF",
+      "icon": "/icons/technologies/react.svg"
+    },
+    {
+      "word": "Vue.js",
+      "color": "#4FC08D",
+      "icon": "/icons/technologies/vue.svg"
+    },
+    {
+      "word": "Angular",
+      "color": "#FF3E30",
+      "icon": "/icons/technologies/angular.svg"
+    },
+    {
+      "word": "JavaScript",
+      "color": "#FFEA00",
+      "icon": "/icons/technologies/javascript.svg"
+    },
+    {
+      "word": "TypeScript",
+      "color": "#007ACC",
+      "icon": "/icons/technologies/typescript.svg"
+    },
+    {
+      "word": "HTML5",
+      "color": "#FF5733",
+      "icon": "/icons/technologies/html.svg"
+    },
+    {
+      "word": "CSS3",
+      "color": "#264DE4",
+      "icon": "/icons/technologies/css.svg"
+    },
+    {
+      "word": "Sass",
+      "color": "#FF80AB",
+      "icon": "/icons/technologies/sass.svg"
+    },
+    {
+      "word": "Tailwind CSS",
+      "color": "#0EA5E9",
+      "icon": "/icons/technologies/tailwindcss.svg"
+    }
+  ],
+  "backend": [
+    {
+      "word": "Node.js",
+      "color": "#3C873A",
+      "icon": "/icons/technologies/node.svg"
+    },
+    {
+      "word": "Express.js",
+      "color": "#AAAAAA",
+      "icon": "/icons/technologies/express.svg"
+    },
+    {
+      "word": "Python",
+      "color": "#4584E8",
+      "icon": "/icons/technologies/python.svg"
+    },
+    {
+      "word": "Spring Boot",
+      "color": "#7BC143",
+      "icon": "/icons/technologies/spring.svg"
+    },
+    {
+      "word": "Java",
+      "color": "#5382A1",
+      "icon": "/icons/technologies/java.svg"
+    },
+    {
+      "word": "NestJs",
+      "color": "#FF3366",
+      "icon": "/icons/technologies/nestjs.svg"
+    },
+    {
+      "word": "Quarkus",
+      "color": "#4E9BFE",
+      "icon": "/icons/technologies/quarkus.svg"
+    }
+  ],
+  "databases": [
+    {
+      "word": "MySQL",
+      "color": "#00618A",
+      "icon": "/icons/technologies/mysql.svg"
+    },
+    {
+      "word": "PostgreSQL",
+      "color": "#3366CC",
+      "icon": "/icons/technologies/postgresql.svg"
+    },
+    {
+      "word": "MongoDB",
+      "color": "#4CAF50",
+      "icon": "/icons/technologies/mongodb.svg"
+    },
+    {
+      "word": "SQLite",
+      "color": "#005F8F",
+      "icon": "/icons/technologies/sqlite.svg"
+    }
+  ]
+}

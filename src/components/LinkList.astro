@@ -1,0 +1,23 @@
+---
+import LinksList from '@data/links.json';
+import RedirectIcon from "@icons/utils/Redirect.astro";
+
+const { links } = LinksList;
+---
+
+<div class="flex flex-row gap-10 items-center mt-2">
+  {
+    links.map(({name, link}) => (
+      <a
+        rel="noopener noreferrer" 
+        target="_blank" 
+        title="Email" 
+        href={link} 
+        role="link" 
+        class="text-white text-lg font-light tracking-wider group flex items-center justify-between gap-[2px] transition hover:text-orange-300 hover:underline active:scale-95">
+        {name}  
+        <RedirectIcon  class="w-5 h-5"/>
+      </a>
+    ))
+  }
+</div>
