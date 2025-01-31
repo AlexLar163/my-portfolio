@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.animate-typing {
+  animation: typing 2s steps(20) alternate, blink .7s infinite;
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+    visibility: hidden;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+@theme {
+  --font-onest-variant: "Onest Variable", sans-serif;
+  --font-sora-variant: "Sora Variable", sans-serif;
+  --color-primary: #34d399;
+  --color-secondary: #fb923c;
+  --color-accent: #a855f7;
+}

@@ -15,6 +15,7 @@
       "@icons/*": ["src/icons/*"],
       "@images/*": ["src/images/*"],
       "@assets/*": ["src/assets/*"],
+      "@styles/*": ["src/styles/*"],
     }
   }
 }

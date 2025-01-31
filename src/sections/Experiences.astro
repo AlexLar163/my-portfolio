@@ -1,0 +1,39 @@
+---
+export interface Experience {
+  position: string;
+  company: string;
+  date: string;
+  description: string;
+}
+export interface ExperienceProps {
+  experiences: Experience[];
+}
+
+const { experiences = [] } = Astro.props as ExperienceProps;
+---
+<section class="mt-32">
+  <h2 class="text-5xl font-bold text-white text-center decoration-wavy underline font-sora-variant">Experiencias</h2>
+  <div class="mt-20">
+    {
+      experiences.map(({position, company, date, description}) => (
+      <article class="border-l-2 border-gray-700 flex justify-between pl-20 pb-10 relative">
+        <span class="text-orange-400 text-6xl rounded-full -left-[10px] absolute">•</span>
+        <div class="flex pt-4">
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-orange-400">{position}</h3>
+            <p class="font-bold">
+              {company}
+            </p>
+            <p class="text-sm font-thin">
+              {date}
+            </p>
+          </div>
+          <p class="text-white self-center flex-1">
+            {description}
+          </p>
+        </div>
+      </article>
+      ))
+    }
+  </div>
+</section>

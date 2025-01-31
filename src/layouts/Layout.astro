@@ -2,6 +2,8 @@
 import '@fontsource-variable/onest';
 import '@fontsource-variable/sora';
 import '@fontsource/spicy-rice';
+import '@styles/global.css';
+
 ---
 <!doctype html>
 <html lang="en">
@@ -12,7 +14,7 @@ import '@fontsource/spicy-rice';
     <meta name="generator" />
     <title>Alex Largo - Portfolio</title>
   </head>
-  <body class="bg-black-primary relative">
+  <body class="relative scroll-smooth">
       <div class="radial-lines" />
       <div>
         <main>
@@ -25,12 +27,23 @@ import '@fontsource/spicy-rice';
 <style>
   body {
     font-family: "Onest Variable", "Sora Variable", "Spicy Rice", sans-serif;
+    background-color: hsl(223 16% 5%);
   }
+  
+  body::-webkit-scrollbar {
+    width: 8px; 
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #fb923c7b;
+    border-radius: 20px;
+  }
+
   main::before {
-    --background: 223 16% 5%;
     --accent-hue: 30;
     --accent-saturation: 75%;
     --accent-lightness: 55%;
+    --background: 223 16% 5%;
     --accent: var(--accent-hue) var(--accent-saturation) var(--accent-lightness);
     --gradient-background: radial-gradient(ellipse 60% 70% at 50% 0%, hsl(var(--accent) / .15), hsl(var(--background) / 0));
 
@@ -40,7 +53,6 @@ import '@fontsource/spicy-rice';
     width: 100%;
     height: 100vh;
     z-index: -90;
-    background-color: hsl(var(--background));
     background-image: var(--gradient-background);
     background-repeat: no-repeat;
     overflow-x: hidden;

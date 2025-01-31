@@ -1,0 +1,49 @@
+---
+import Star from "@icons/utils/Star.astro";
+
+
+export interface Tech {
+  name: string;
+  icon: string;
+}
+export interface TechnologiesListProps {
+  techs: Tech[];
+  class?: string;
+}
+const { techs, class: className } = Astro.props as TechnologiesListProps;
+
+---
+<div class="overflow-x-clip mt-32"> 
+  <div class="bg-gradient-to-r from-primary via-secondary to-accent overflow-x-clip -rotate-3 -mx-1"> 
+    <div class="flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"> 
+      <div class="flex flex-none gap-4 pr-4 py-3 move-left"> 
+        {
+          techs.concat(techs).map((tech) => (
+            <div class="inline-flex items-center gap-4"> 
+              <Star />
+              <img src={tech.icon} class="w-7 h-7 bg-white rounded-full p-1" />
+              <span class="text-white uppercase font-extrabold text-sm">
+                {tech.name}
+              </span> 
+            </div>
+          ))
+        }
+      </div>
+    </div> 
+  </div>
+</div>
+
+<style>
+  .move-left {
+    animation: scroll-left 30s linear infinite;
+  }
+
+  @keyframes scroll-left{
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+</style>

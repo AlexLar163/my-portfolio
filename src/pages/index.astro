@@ -1,7 +1,15 @@
 ---
+import TechnologiesList from "@components/TechnologiesList.astro";
 import Layout from "@layouts/Layout.astro";
 import Header from "@sections/Header.astro";
 import Hero from "@sections/Hero.astro";
+
+import wordsData from "@data/words.json";
+import Experiences from "@sections/Experiences.astro";
+import experiencesData from "@data/experiences.json";
+
+const words = Object.values(wordsData).flat();
+const experiences = experiencesData.experiences;
 ---
 
 <Layout >
@@ -9,4 +17,9 @@ import Hero from "@sections/Hero.astro";
   <div class="max-w-[960px] mx-auto">
     <Hero />
   </div>
+  <TechnologiesList techs={words} class="mt-10"/>
+  <div class="max-w-[960px] mx-auto text-white">
+    <Experiences experiences={experiences}/>
+  </div>
+  <TechnologiesList techs={words} class="mt-10"/>
 </Layout>

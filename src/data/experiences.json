@@ -1,0 +1,34 @@
+{
+	"experiences": [
+		{
+			"position": "Fullstack Developer",
+			"company": "Evaluar",
+			"date": "Marzo 2024 - Mayo 2024",
+			"description": "Desarrollé e implementé funcionalidades en proyectos Fullstack utilizando Vue, React, NuxtJs, NextJs, NestJs y Java. Mejoré el rendimiento de APIs, optimicé consultas a bases de datos y facilité la comunicación entre distintos servicios."
+		},
+		{
+			"position": "Fullstack Developer",
+			"company": "Desarrollo de Tesis",
+			"date": "Mayo 2023 - Noviembre 2023",
+			"description": "Desarrollé una aplicación Fullstack para la gestión de inventarios con análisis de datos mediante IA. Implementé un backend en NestJS con MongoDB y autenticación segura. La aplicación móvil fue creada en Flutter y el frontend en NextJS con un dashboard informativo. Implementé CI/CD con Docker, DigitalOcean y GitHub Actions para automatizar despliegues."
+		},
+		{
+			"position": "Frontend Developer",
+			"company": "Evaluar",
+			"date": "Marzo 2022 - Abril 2023",
+			"description": "Desarrollé interfaces web con Vue, React y Angular. Optimizé la experiencia de usuario con Responsive Design y mejoras en la navegación. Implementé tests unitarios con Jest y TestLibrary."
+		},
+		{
+			"position": "Fullstack Developer",
+			"company": "Trompo Mobiliario Infantil",
+			"date": "Octubre 2021 - Enero 2022",
+			"description": "Desarrollé una aplicación web con NextJs y TailwindCSS. Creé una API con NestJS y PostgreSQL. Implementé autenticación y seguridad en los endpoints y desplegué los servicios con Docker en Vercel y Render."
+		},
+		{
+			"position": "Fullstack Developer",
+			"company": "Gad San Fernando",
+			"date": "Junio 2021 - Septiembre 2021",
+			"description": "Realicé prácticas pre-profesionales desarrollando una aplicación web con ReactJS y NestJS. Implementé una base de datos con MySQL y desplegué la aplicación en un servidor CentOS con Docker."
+		}
+	]
+}
